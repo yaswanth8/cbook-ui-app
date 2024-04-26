@@ -1,8 +1,8 @@
 const idContactList = document.getElementById('idContactList');
 idContactList.innerHTML = 'Contact list will be displayed here...';
 
-const basePath = "http://localhost:8080";
-//const basePath = "https://cbook-server-app-usci.onrender.com";
+// const basePath = "http://localhost:8080";
+const basePath = "https://cbook-server-app-usci.onrender.com";
 
 const getContacts = async () => {
     const response = await fetch(`${basePath}/api/contact/all`);
